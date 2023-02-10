@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +14,12 @@
     <div class="general">
         <div class="nav">
             <div class="logo">
-                <a href="#"><span class="theme">AKK</span></a>
+                <a href="index.html"><span class="theme">AKK</span></a>
             </div>
 
             <div class="menu">
                 <ul>
-                    <li><a href="index.html"><i class="fa fa-house"></i>  Accueil</a></li>
+                    <li><a href="index.html"><i class="fa fa-house"></i>Accueil</a></li>
                     <li><a href="page2.html"><i class="fa fa-user"></i>Qui suis-je?</a></li>
                     <li><a href="page3.html"><i class="fa fa-list"></i>Service</a></li>
                     <li><a href="page4.html"><i class="fa fa-briefcase"></i>Portfolio</a></li>
@@ -33,11 +33,121 @@
 
 
         <div class="contenu">
+        <!-- bar responsive -->
+        <nav class="navbar fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navigationResponsive" aria-controls="navigationResponsive">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="navigationResponsive" aria-labelledby="navigationLabel">
+                    
+                    <div class="logo offcanvas-header">
+                        <a href="index.html"><span class="theme offcanvas-title" id="navigationLabel">AKK</span></a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+        
+                    <div class="menu offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-house"></i>Accueil</a></li>
+                            <li class="nav-item"><a href="page2.html" class="nav-link"><i class="fa fa-user"></i>Qui suis-je?</a></li>
+                            <li class="nav-item"><a href="page3.html" class="nav-link"><i class="fa fa-list"></i>Service</a></li>
+                            <li class="nav-item"><a href="page4.html" class="nav-link"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                            <li class="nav-item"><a href="page5.html" class="nav-link active"><i class="fa fa-comments"></i>Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
 
             <div class="titre">
                 Contact
             </div>
-            <div class="content">
+            <div class="content1 container">
+                <p class="titre1 theme">
+                    Vous avez une question ?
+                </p>
+                <p class="sous-titre1">je suis a votre service !</p>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card sous-titre1">
+                            <i class="theme fa-solid fa-phone-volume fa-3x me-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Téléphone</b></h5>
+                                <p class="card-text">79 50 86 25</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card sous-titre1">
+                            <i class="theme fa-sharp fa-solid fa-location-dot fa-3x me-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Adresse</b></h5>
+                                <p class="card-text">Bamako</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card sous-titre1">
+                            <i class="theme fa-solid fa-at fa-3x me-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Email</b></h5>
+                                <p class="card-text">kamso1805@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card sous-titre1">
+                            <i class="theme fa-sharp fa-solid fa-earth-africa fa-3x me-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Site web</b></h5>
+                                <p class="card-text">www.kamso1991.com</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+
+                <p class="titre1 theme">
+                    Un projet de création web ?
+                </p>
+                <p class="sous-titre1">
+                    Envoyer-moi un mail, je serais ravi d'en discuter avec vous autour d'un café !
+                </p>
+
+               
+                       
+                <form class="row g-3">
+                    
+                    <div class="col-12 col-md-6 ">
+                        <label for="prenom" class="form-label">Prénom</label>
+                        <input type="text" name="prenom" id="prenom" class="form-control">
+                    </div>
+                    <div class="col-12 col-md-6 ">
+                        <label for="nom" class="form-label">Nom</label>
+                        <input type="text" name="prenom" id="nom" class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <label for="mail" class="form-label">Email</label>
+                        <input type="email" name="mail" id="mail" class="form-control" >
+                    </div>
+                    <div class="col-12">
+                        <label for="mail" class="form-label">Sujet</label>
+                        <input type="text" name="sujet" id="sujet" class="form-control" >
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" id="message" class="form-control" ></textarea>
+                    </div>
+                    <div class="col-3">
+                        <button type="submit" class="btn form-control">Envoyer</button>
+                    </div>
+                </form>
+               
               
             </div>
 
