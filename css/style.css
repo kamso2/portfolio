@@ -1,13 +1,9 @@
 :root{
     --theme-color1-900: rgb(255, 0, 0);
-    --theme-color2-900: rgb(0, 145, 255);
-    --theme-color3-900: rgb(0, 255, 55);
-    --bg-color1-: rgb(74, 74, 74) ;
     --bg-color2-: rgb(232, 230, 230) ;
-    --bg-body1-:aliceblue;
-    --bg-body2-:rgb(23, 23, 23);
-    --text-color1-:black;
-    --text-color2-:rgb(255, 255, 255);
+    --bg-color1-: rgb(210, 210, 210) ;
+    --bg-body-:aliceblue;
+    --text-color-:rgb(0, 0, 0);
     
 }
 *{
@@ -15,7 +11,17 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--bg-body1-);
+    background-color: var(--bg-body-);
+}
+body .dark{
+    --theme-color1-900: rgb(255, 0, 0);
+    --bg-color2-: rgb(232, 230, 230) ;
+    --bg-color1-: rgb(125, 125, 125) ;
+    --bg-body-:rgb(21, 21, 21);
+    --text-color-:rgb(255, 255, 255);
+}
+.container{
+    color: var(--text-color-);
 }
 
 ::before,::after{
@@ -80,7 +86,7 @@ ul{
 }
 
 .menu ul a{
-    color: var(--text-color1-);
+    color: var(--text-color-);
     border-bottom: 1px solid var(--bg-color1-);
     display: block;
     text-decoration: none;
@@ -113,15 +119,11 @@ ul{
 img{
     width: 350px;
     height: auto;
-    border-radius: 15px;
     /* border: 5px dashed lightgray; */
-    padding: 30px;   
+    padding: 30px;  
     
 }
-.profil:hover{
-    background-color: var(--bg-color2-);
-    border-radius: 15px;
-}
+
 
 .titre{
     font-size: 40px;
@@ -131,6 +133,7 @@ img{
     font-family: system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
+    color: var(--text-color-);
     
 }
 
@@ -138,6 +141,8 @@ img{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     margin: 0;
+    width: 100%;
+    color: var(--text-color-);
     
 }
 
@@ -151,6 +156,21 @@ span{
 .profil{
     margin: auto;
 }
+
+/* .profil:hover{
+    background-color: var(--bg-color2-);
+    border-radius: 15px;
+} */
+.card i{
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+.card i:hover{
+    background-color: var(--theme-color1-900);
+    color: var(--bg-color2-);
+}
+
 .description div{
     font-family: cursive;
     font-weight: 900; 
@@ -159,6 +179,8 @@ span{
 .theme{
     color: var(--theme-color1-900) ;
 }
+
+/* les boutton */
 .description .btn{
     background-color: var(--theme-color1-900);
     color: white;
@@ -175,7 +197,7 @@ span{
     font-family: cursive;
     font-size: 20px;
     position: relative;
-    left: 450px;
+    left: 50px;
     top: 50px;
     color: white;
     border-radius: 30px;
@@ -191,7 +213,7 @@ span{
     background-color: var(--theme-color1-900);
     color: white;
 }
-.col-3 .btn{
+.col-4 .btn{
     font-family: cursive;
     position: relative;
     background-color: var(--theme-color1-900);
@@ -245,7 +267,13 @@ span{
     
 }
 .bar{
-    padding: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.bar:hover{
+    box-shadow: 1px 1px 10px;
 }
 
 .icones{
@@ -276,6 +304,9 @@ span{
     margin-top: 20px;
     margin-bottom: 50px;
 }
+.para p{
+    font-size: 15px;
+}
 
 .titre1{
     font-size: 30px;
@@ -288,9 +319,6 @@ span{
     text-align: center;
     font-size: 25px;
     
-}
-.card i{
-    margin-top: 25px;
 }
 
 .card{
@@ -308,7 +336,7 @@ span{
 
 
 /* responsivite */
-@media (max-width:768px) {
+@media (max-width:1100px) {
     .nav{
         display: none;
     }
@@ -333,14 +361,41 @@ span{
     .content{
         display: flex;
     }
+    .d2{
+        display: block;
+    }
+    .d1 .btn{
+        left: 40%;
+    }
   
 }
-@media (max-width:320px) {
+@media (max-width:767px) {
+    .content{
+        display: block;
+    }
     
+    .content .btn{
+        left: 50px;
+    }
+    .d1 .btn{
+        left: 40px;
+    }
+    .d2{
+        padding: 10px;
+    }
+    .div{
+        display: block;
+    }
+    .profil img{
+        width: 100%;
+    }
+    .description{
+        font-size: 15px;
+    }
 }
 
-@media  (min-width: 769px) {
+@media  (min-width: 1101px) {
     .navbar{
         display: none;
     }
-}
+} 
