@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,13 @@
     <title>Service</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/couleur1.css" class="themeCouleur"  title="couleur1">
+    <link rel="stylesheet" href="css/couleur2.css" class="themeCouleur" disabled title="couleur2">
+    <link rel="stylesheet" href="css/couleur3.css" class="themeCouleur" disabled title="couleur3">
+    <link rel="stylesheet" href="css/couleur4.css" class="themeCouleur" disabled title="couleur4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<body>
+<body class="light">
     <div class="general">
         <div class="nav">
             <div class="logo">
@@ -67,7 +71,7 @@
 
                 <div class="row row-cols-1 row-cols-md-2 g-4 sous-titre1">
                     <div class="col">
-                        <div class="card para">
+                        <div class="card">
                             <div>
                                 <i class="fa-solid fa-mobile-screen-button fa-3x me-3 theme"></i>
                             </div>
@@ -80,7 +84,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card para">
+                        <div class="card">
                             <div>
                                 <i class="fa-solid fa-laptop-code fa-3x me-3 theme sous-titre1"></i>
                             </div>
@@ -98,9 +102,32 @@
             </div>
 
         </div>
+        <div class="theme-bar">
+            <div class="switch">
+                <div class="para">
+                    <button><i class="fa-solid fa-gear fa-spin"></i></button>
+                </div>
+                <div class="nuit-jour">
+                    <button><i class="fa-solid fa-moon"></i></i></button>
+                </div>
+
+            </div>
+            <div class="couleur">
+                <div class="">
+                    Couleur de theme
+                </div>
+                <button class="couleur1" onclick="setActive('couleur1')" style="background-color: rgb(255, 0, 0);">.</button>
+                <button class="couleur2" onclick="setActive('couleur2')"style="background-color: rgb(0, 94, 255);">.</button>
+                <button class="couleur3" onclick="setActive('couleur3')"style="background-color: rgb(1, 174, 41);">.</button>
+                <button class="couleur4" onclick="setActive('couleur4')"style="background-color: rgb(255, 0, 255);">.</button>
+            </div>
+        
+        </div>
 
 
     </div>
+
+
     <script src="js/script.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
