@@ -1,9 +1,9 @@
 :root{
-    --bg-color2-: rgb(232, 230, 230) ;
+    /* --bg-color2-: rgb(232, 230, 230) ;
     --bg-color1-: rgb(210, 210, 210) ;
     --bg-body-:aliceblue;
-    --text-color-:rgb(0, 0, 0);
-    
+    --text-color-:rgb(0, 0, 0); */
+    --theme-color1-900: rgb(255, 0, 0);
     
 }
 *{
