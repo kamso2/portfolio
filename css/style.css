@@ -237,7 +237,7 @@ span{
 
 }
 
-
+/* contenu 2 */
 .d1{
     width: 90%;
     margin-top: 60px;
@@ -300,8 +300,8 @@ span{
 
 /* div de formation et parcours */
 .div{
-    display: flex;
-    flex-direction:row ;
+    display: grid;
+    grid-template-columns: 50% 50%;
     
 }
 .div-1{
@@ -314,6 +314,7 @@ span{
 .div-1 .d2{
     display: flex;
     flex-direction: column;
+    height: 100%;
     
 }
 
@@ -321,6 +322,8 @@ span{
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+/* les cartes et sous-titre */
 .card p{
     font-size: 15px;
 }
@@ -342,6 +345,7 @@ span{
     border-radius: 20px;
     background-color: var(--bg-color2-);
     box-shadow: 1px 1px 3px ;
+    height: 100%;
 }
 .navbar div button{
     border: 1px solid black;
